@@ -15,9 +15,13 @@ Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
+
 activityrecognition@smartlab.ws
+
 www.smartlab.ws
+
 Dataset Location: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
 Datset Information: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The original dataset contained several test and train files, which contained data outputted from the Samsung Galaxy S II worn by 30 subject volunteers. The phones were equipped with accelerometers and gyroscopes that measured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50 Hz. For more information, visit the source site mentioned above. 
