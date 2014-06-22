@@ -25,11 +25,14 @@ As part of this project the following files were uploaded on github in the proje
 
 ##Tidying the dataset
 According to Hadley Wickham's "Tidy Data" paper published in the Journal of Statistical Software, tidy data has 3 components: 
+
 1. Each variable forms a column.
+
 2. Each observation forms a row. 
+
 3. Each type of observational unit forms a table. 
 
-These are the general guidlines I adhered to for my script. 
+The above are the general guidlines I adhered to for my script. 
 
 ##R script analysis
 In this section I will briefly go over each section of the project, and detail how I tackled the problem in my R scrip, run_analysis.R.
