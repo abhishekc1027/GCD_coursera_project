@@ -8,7 +8,7 @@ AChanna
 
 06.22.2014
 
--------
+
 ##Overview
 In this course project students were provided a "messy" dataset and were asked to process, reshape, and clean the data set to be "tidy." The dataset used for this project was the "Human Activity Recognition Using Smartphones Dataset." It contains data collected from the accelerometers and gyroscopes of the Samsung Galaxy S II phone worn by 30 volunteers. For more details visit the source site: 
 
@@ -19,7 +19,8 @@ As part of this project the following files were uploaded on github in the proje
 *run_analysis.R: R script that process, reshapes, and cleans dataset and writes a file in the working directory that contains the tidy dataset.
 *README.md: A markdown file with an explanation of the project, files, and the overall process.
 *codebook.md: A markdown file which describes all the variables, and naming conventions used in the tidying process. 
---------
+
+
 ##Tidying the dataset
 According to Hadley Wickham's "Tidy Data" paper published in the Journal of Statistical Software, tidy data has 3 components: 
 1. Each variable forms a column.
@@ -27,7 +28,7 @@ According to Hadley Wickham's "Tidy Data" paper published in the Journal of Stat
 3. Each type of observational unit forms a table. 
 
 These are the general guidlines I adhered to for my script. 
---------
+
 ##R script analysis
 In this section I will briefly go over each section of the project, and detail how I tackled the problem in my R scrip, run_analysis.R.
 
