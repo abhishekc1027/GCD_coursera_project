@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title><em>06.22.2014</em></title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<p>##ReadMe
+<em>Getting and Cleaning Data Course Project (Coursera)</em>
+<em>Script to clean and reshape messy dataset into a tidy dataset</em>
+<em>AChanna</em></p>
+
+<h2><em>06.22.2014</em></h2>
+
+<p>##Overview
+In this course project students were provided a &ldquo;messy&rdquo; dataset and were asked to process, reshape, and clean the data set to be &ldquo;tidy.&rdquo; The dataset used for this project was the &ldquo;Human Activity Recognition Using Smartphones Dataset.&rdquo; It contains data collected from the accelerometers of the Samsung Galaxy S II phone worn by 30 volunteers. For more details visit the source site: </p>
+
+<p>[<a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a>]</p>
+
+<p>As part of this project the following files were uploaded on github in the project repo:</p>
+
+<p>*run_analysis.R: R script that process, reshapes, and cleans dataset and writes a file in the working directory that contains the tidy dataset.
+*README.md: A markdown file with an explanation of the project, files, and the overall process.</p>
+
+<h2>*codebook.md: A markdown file which describes all the variables, and naming conventions used in the tidying process. </h2>
+
+<p>##Tidying the dataset
+According to Hadley Wickham&#39;s &ldquo;Tidy Data&rdquo; paper published in the Journal of Statistical Software, tidy data has 3 components: 
+1. Each variable forms a column.
+2. Each observation forms a row. 
+3. Each type of observational unit forms a table. </p>
+
+<h2>These are the general guidlines I adhered to for my script. </h2>
+
+<p>##R script analysis
+In this section I will briefly go over each section of the project, and detail how I tackled the problem in my R scrip, run_analysis.R.</p>
+
+<p>###1.Merges the training and the test sets to create one data set.
+After loading all the data files into R, the script combines data from the test dataset into one data frame, and the data from the train dataset into one data frame to create two complete and distinct test and train datasets. These two datasets are then merged together using the rbind() function to create one dataset. </p>
+
+<p>###2.Extracts only the measurments on the mean and standard deviation for each measurement.
+Using the &ldquo;features.txt&rdquo; file, the script names the measured columns. The first two columns are simply the subject ID, and the activity they performed. To extract only the mean and the standard deviation column variables, the grep function is used to subset the data. Only variable names that have a &ldquo;mean()&rdquo; or a &ldquo;std()&rdquo; are extracted, since these are truly the means and standard deviations, and not other variables such as meanFreq() which denotes frequency. </p>
+
+<p>###3.Uses descriptive activity names to name the activities in the data set.
+Since the activities were labeled as numeric identifiers, the script extracted the labels from the &ldquo;activity_labels.txt&rdquo; and assigned them to the activities in our dataset. For legibility, all the activities were converted to lower case, and the underscores were removed and replaced with a blank space. Since the labels were descriptive enough, no other changes were deemed neccessary.</p>
+
+<p>###4.Appropriately labels the data set with descriptive variable names.
+In this part of the script all abbreviations are expanded out, all characters are omitted, and a &ldquo;.&rdquo; is inserted between each word. In Week 4 of the video lecture &ldquo;Editing Text Variables&rdquo;, Prof. Leek advises to use only lower cases for variable names, and to not use any characters. I decided to go with the middle ground here since the variable names are very long, it would be hard to read without the &ldquo;.&rdquo;. I also referred to Google&#39;s R Stype Rules guide for naming conventions:</p>
+
+<p>[<a href="https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#identifiers">https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#identifiers</a>]</p>
+
+<p>The gsub function is used extensively to find and replace any patterns in this section. </p>
+
+<p>###5.Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+This section uses the &ldquo;reshape2&rdquo; library and the functions &ldquo;melt&rdquo; and &ldquo;dcast&rdquo; to reshape the data to be tidy. The &ldquo;subject.id,&rdquo; and &ldquo;activity&rdquo; variables are used as id.vars, and the rest of the variables as measure.vars. Once we have the molten dataset, we use the &ldquo;dcast&rdquo; function to calculate the average of each variable for each activity and each subject. </p>
+
+<p>Once the tidy dataset is ready, we slightly modify the variable names to indicate that these are now averages by adding &ldquo;average.of.&rdquo; in the beginning of each variable. </p>
+
+<p>Finally the script writes the dataset to a text file &ldquo;tidyData.txt&rdquo;</p>
+
+</body>
+
+</html>
+
