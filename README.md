@@ -16,11 +16,11 @@ In this course project students were provided a "messy" dataset and were asked t
 
 As part of this project the following files were uploaded on github in the project repo:
 
-*run_analysis.R: R script that process, reshapes, and cleans dataset and writes a file in the working directory that contains the tidy dataset.
+1.run_analysis.R: R script that process, reshapes, and cleans dataset and writes a file in the working directory that contains the tidy dataset.
 
-*README.md: A markdown file with an explanation of the project, files, and the overall process.
+2.README.md: A markdown file with an explanation of the project, files, and the overall process.
 
-*codebook.md: A markdown file which describes all the variables, and naming conventions used in the tidying process. 
+3.codebook.md: A markdown file which describes all the variables, and naming conventions used in the tidying process. 
 
 
 ##Tidying the dataset
