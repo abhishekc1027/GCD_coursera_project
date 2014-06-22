@@ -1,8 +1,8 @@
 -----------
 #CodeBook for tidyData.txt
-_Getting and Cleaning Data Course Project (Coursera)_
-_AChanna_
-_06.22.2014_
+Getting and Cleaning Data Course Project (Coursera)
+AChanna
+06.22.2014
 ----------
 ##Original Source and Variables
 The following are the details for the original source of the data:
