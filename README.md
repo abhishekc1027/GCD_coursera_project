@@ -1,9 +1,13 @@
 --------
 #ReadMe
-_Getting and Cleaning Data Course Project (Coursera)_
-_Script to clean and reshape messy dataset into a tidy dataset_
-_AChanna_
-_06.22.2014_
+Getting and Cleaning Data Course Project (Coursera)
+
+Script to clean and reshape messy dataset into a tidy dataset
+
+AChanna
+
+06.22.2014
+
 -------
 ##Overview
 In this course project students were provided a "messy" dataset and were asked to process, reshape, and clean the data set to be "tidy." The dataset used for this project was the "Human Activity Recognition Using Smartphones Dataset." It contains data collected from the accelerometers and gyroscopes of the Samsung Galaxy S II phone worn by 30 volunteers. For more details visit the source site: 
