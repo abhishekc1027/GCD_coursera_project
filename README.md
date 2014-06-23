@@ -35,7 +35,7 @@ According to Hadley Wickham's "Tidy Data" paper published in the Journal of Stat
 The above are the general guidlines I adhered to for my script. 
 
 ##R script analysis
-In this section I will briefly go over each section of the project, and detail how I tackled the problem in my R scrip, run_analysis.R.
+In this section I will briefly go over each section of the project, and detail how I tackled the problem in my R script, run_analysis.R.
 
 ###1.Merges the training and the test sets to create one data set.
 After loading all the data files into R, the script combines data from the test dataset into one data frame, and the data from the train dataset into one data frame to create two complete and distinct test and train datasets. These two datasets are then merged together using the rbind() function to create one dataset. 
