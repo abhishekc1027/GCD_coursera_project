@@ -49,7 +49,7 @@ Since the activities were labeled as numeric identifiers, the script extracted t
 ###4.Appropriately labels the data set with descriptive variable names.
 In this part of the script all abbreviations are expanded out, all characters are omitted, and a "." is inserted between each word. In Week 4 of the video lecture "Editing Text Variables", Prof. Leek advises to use only lower cases for variable names, and to not use any characters. I decided to go with the middle ground here since the variable names are very long, it would be hard to read without the ".". I also referred to Google's R Stype Rules guide for naming conventions:
 
-[](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#identifiers)
+(https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#identifiers)
 
 The gsub function is used extensively to find and replace any patterns in this section. 
 
