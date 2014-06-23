@@ -12,7 +12,7 @@ AChanna
 ##Overview
 In this course project students were provided a "messy" dataset and were asked to process, reshape, and clean the data set to be "tidy." The dataset used for this project was the "Human Activity Recognition Using Smartphones Dataset." It contains data collected from the accelerometers and gyroscopes of the Samsung Galaxy S II phone worn by 30 volunteers. For more details visit the source site: 
 
-[](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+[(http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)]
 
 As part of this project the following files were uploaded on github in the project repo:
 
