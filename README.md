@@ -20,7 +20,7 @@ As part of this project the following files were uploaded on github in the proje
 
 2.README.md: A markdown file with an explanation of the project, files, and the overall process.
 
-3.codebook.md: A markdown file which describes all the variables, and naming conventions used in the tidying process. 
+3.CodeBook.md: A markdown file which describes all the variables, and naming conventions used in the tidying process. 
 
 
 ##Tidying the dataset
